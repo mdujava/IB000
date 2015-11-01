@@ -4,7 +4,23 @@
 \usepackage[top=7cm, left=2cm, right=2cm]{geometry} % okraje 
 \pagestyle{empty} % zrusenie cislovania
 \usepackage{wallpaper} % pozadia
+
+\usepackage{tikz}
+\def\firstcircle{(0,0) circle (1.5cm)}
+\def\secondcircle{(60:2cm) circle (1.5cm)}
+\def\thirdcircle{(0:2cm) circle (1.5cm)}
+
 \ULCornerWallPaper{1}{odpovednik.pdf} % pozadie z PDF
 \begin{document}
 	Riesenie ...
+	\begin{tikzpicture}
+	\begin{scope}[shift={(3cm,-5cm)}, fill opacity=0.5]
+	\fill[red] \firstcircle;
+	\fill[green] \secondcircle;
+	\fill[blue] \thirdcircle;
+	\draw \firstcircle node[below] {$A$};
+	\draw \secondcircle node [above] {$B$};
+	\draw \thirdcircle node [below] {$C$};
+	\end{scope}
+	\end{tikzpicture}
 \end{document}
