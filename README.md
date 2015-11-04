@@ -2,4 +2,4 @@
 Homework template for IB000.
 
 odpovednik.pdf je druhá strana zo zadania.
-\macha, \machb, \machc je príkaz na zobrazenie machuľe.
+Príkazy na zobrazenie machúľ sú \\macha, \\machb, \\machc. 
